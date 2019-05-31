@@ -1,0 +1,90 @@
+#add{
+    width: 500px;
+    height: 440px;
+    background-color: rgba(0,0,0,0.4);
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+#add form{
+    margin: 0 auto;
+    /*background-color: red;*/
+    width: 300px;
+    height: 340px;
+    padding-top: 20px;
+   
+}
+#add div{
+    width: 300px;
+    height: 70px;
+    
+    /*background-color: blue;*/
+    margin-top: 10px;
+}
+#add div input{
+    width: 210px;
+    height: 20px;
+    border-radius: 5px;
+}
+#add div textarea{
+    border-radius: 5px;
+    
+}
+#add div button{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;    
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: 0.3s;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+#add div button:hover{
+    display: block;
+    transform: scale(1.1);
+    transition: 0.3s;
+    margin: 0 auto;
+    width: 80px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: bold;    
+    border-radius: 5px;
+    color: white;
+    background-color: Orange;
+    cursor: pointer;
+}
+#add a{
+    display: block;
+    text-decoration: none;
+   
+    float: right;
+    cursor: pointer;
+    font-size: 13px;
+}
+#add a:hover{
+    display: block;
+    text-decoration: none;
+   
+    float: right;
+    color: Orange;
+    cursor: pointer;
+}
+h1{
+    padding-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 43px;
+    text-shadow: 5px 5px 5px #888888;
+
+}

@@ -1,0 +1,13 @@
+<%- include ./common/header.ejs %>
+<h1>CSGO饰品交易网</h1>>
+<div id="register">
+        <form action="http://localhost:4000/register" method="POST">
+                账户：<input type="text" name="username" id="username" /></br>
+                密码：<input type="password" name="password" id="password" /></br>
+                邮箱：<input type="email" name="email" id="email">
+
+                <button type="submit">注册</button>
+        </form>
+        <a href="/login">登录>></a>
+</div>
+<%- include ./common/footer.ejs %>

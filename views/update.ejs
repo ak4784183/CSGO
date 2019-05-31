@@ -1,0 +1,15 @@
+<%- include ./common/header.ejs  %>
+<h1>饰品库</h1>
+<div id="add">
+    <form action="http://localhost:4000/list/update/<%=data.id%>" method="post" enctype="multipart/form-data">
+
+        <div>名称：<input type="text" name="name" id="name" value="<%=data.name%>"></div>
+        <div>价格：<input type="number" name="price" id="price" value="<%=data.price%>"></div>
+        <div>描述：<textarea name="description" cols="30" rows="4"><%=data.description%></textarea></div>
+        <div>上架皮肤：<input type="file" name="pic" id="pic" value="<%=data.pic%>"></br></div>
+
+        <div><button type="submit">确认修改</button><a href="/add/list">返回>></a></div>
+
+    </form>
+</div>
+<%- include ./common/footer.ejs %>

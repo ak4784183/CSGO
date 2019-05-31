@@ -1,0 +1,48 @@
+<%- include ./common/header.ejs %>
+<div id="find">
+    <div class="find">
+        <form action="http://localhost:4000/list/find/" method="GET">
+            <input type="search" name="search" id="search">
+            <button type="submit">皮肤搜索</button>
+        </form>
+    </div>
+
+</div>
+<a href="/quit" id="btn"> 退出</a>
+<a href="/add" id="btn"> 上架</a>
+
+
+<div id="list">
+    <table>
+        <thead>
+            <tr>
+                <td>编号</td>
+                <td>皮肤图片</td>
+                <td>饰品名称</td>
+                <td>描述</td>
+                <td>价格</td>
+                <td>上架日期</td>
+                <td>操作</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0;i<arr.length;i++){%>
+            <tr>
+                <td><%=i+1%></td>
+                <td><img src="<%=arr[i].pic%>" alt=""></td>
+                <td><%=arr[i].name%></td>
+                <td><%=arr[i].description%></td>
+                <td><%=arr[i].price%></td>
+                <td><%=moment(arr[i].createAt).format('YYYY-MM-DD')%></td>
+                <td>
+                    <a href="/list/update/<%=arr[i].id%>">修改</a>
+                    <a href="/list/delete/<%=arr[i].id%>?img=<%=arr[i].pic%>">下架</a>
+                </td>
+            </tr>
+
+            <% } %>
+        </tbody>
+    </table>
+</div>
+<%- include ./common/footer.ejs %>
